@@ -5,7 +5,8 @@ const cookie = require("../middleware/Cookie-Middleware.js");
 
 const router = express.Router()
 
-router.get("/", cookie, (req, res) => { // localhost:8000/api/users
+router.get("/", cookie, (req, res) => { // localhost:9000/api/users
+  console.log("username", req.session.username)
     Users.find() 
     .then(response => {
         res.status(200).json(response)

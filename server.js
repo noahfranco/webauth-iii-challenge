@@ -1,7 +1,7 @@
 const express = require("express"); 
 
 // for cookies 
-const sessions = require("express-session");
+const session = require("express-session");
 // for cookies 
 
 const register = require("./apis/Router-Register.js");
@@ -23,7 +23,7 @@ const sessionsConfig = {
     saveUninitialized: true
 }
 
-server.use(sessions(sessionsConfig))
+server.use(session(sessionsConfig))
 
 server.use(express.json())
 
