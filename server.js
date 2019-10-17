@@ -1,5 +1,6 @@
 const express = require("express"); 
 
+
 // for cookies 
 const session = require("express-session");
 // for cookies 
@@ -22,6 +23,7 @@ const sessionsConfig = {
     reSave: false,
     saveUninitialized: true
 }
+
 
 server.use(session(sessionsConfig))
 

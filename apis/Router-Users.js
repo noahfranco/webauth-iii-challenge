@@ -1,11 +1,12 @@
 const express = require("express"); 
 
 const Users =  require("./Users-Model.js");
-const cookie = require("../middleware/Cookie-Middleware.js");
+// const cookie = require("../middleware/Cookie-Middleware.js");
+const token = require("../middleware/Token-Middleware.js"); 
 
 const router = express.Router()
 
-router.get("/", cookie, (req, res) => { // localhost:9000/api/users
+router.get("/", token, (req, res) => { // localhost:9000/api/users
   console.log("username", req.session.username)
     Users.find() 
     .then(response => {
