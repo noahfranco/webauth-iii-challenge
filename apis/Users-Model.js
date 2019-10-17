@@ -9,7 +9,7 @@ module.exports = {
 
 function find() { // users
     return db("users")
-    .select("id", "username", "password") // "departments"
+    .select("id", "username", "password", "department") 
 }
 
 function findById(id) {
