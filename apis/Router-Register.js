@@ -1,12 +1,13 @@
 const express = require("express"); 
 const bcrypt = require("bcrypt"); 
 
-// import uses model here after creating DB 
+const Users = require("./Users-Model.js"); 
 
 const router = express.Router()
 
 router.post("/", (req, res) => { // localhost:8000/api/register
     const user = req.body
+    // const { password } = req.body
 
     const hash = bcrypt.hashSync(user.password, 8)
     user.password = hash 

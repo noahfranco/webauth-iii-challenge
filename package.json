@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/noahfranco/webauth-iii-challenge#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "knex": "^0.19.5",

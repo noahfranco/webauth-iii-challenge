@@ -25,7 +25,7 @@ const sessionsConfig = {
 
 server.use(sessions(sessionsConfig))
 
-server.use(express())
+server.use(express.json())
 
 server.use("/api/register", register)
 server.use("/api/login", login)

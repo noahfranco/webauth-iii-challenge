@@ -1,7 +1,7 @@
 const express = require("express"); 
 const bcrypt = require("bcrypt"); 
 
-// import uses model here after creating DB 
+const Users = require("./Users-Model.js"); 
 
 const router = express.Router()
 
