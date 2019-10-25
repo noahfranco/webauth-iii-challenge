@@ -2,7 +2,6 @@ const express = require("express");
 const bcrypt = require("bcrypt"); 
 
 const Users = require("./Users-Model.js"); 
-
 const router = express.Router()
 
 router.post("/", (req, res) => { // localhost:9000/api/register
